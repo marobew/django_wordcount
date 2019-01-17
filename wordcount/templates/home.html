@@ -1,0 +1,34 @@
+{% load static %}
+<html>
+<head>
+    <title>BORAM</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="Box">
+        <div class="SYU-mark">
+            <img src="/static/css/likelion_syu.png">
+        </div>
+        <div class="Title">
+            <h1>Word Count</h1>
+        </div>
+        <div class="link">
+            <a href="{%url 'about'%}">ABOUT</a>
+            <br />
+        </div>
+        <div class="Content">
+            <h4>글을 입력해주세요</h4>
+            <form action="{%url 'result'%}">
+                <div class="textbox">
+                    <textarea rows="15" cols="80" name="fulltext"></textarea>
+                </div>
+                <br />
+                <button class="btn" type="submit" name="button">Count!</button>
+            </form>
+        </div>
+    </div>
+    <div class="me">
+        <p>copyright: Boram We, Likelion at SYU</p>
+    </div>
+</body>
+</html>

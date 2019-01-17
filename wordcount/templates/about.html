@@ -1,0 +1,41 @@
+{% load static %}
+<html>
+
+<head>
+    <title>BORAM</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="Box">
+        <div class="SYU-mark">
+            <img src="/static/css/likelion_syu.png">
+        </div>
+        <div class="Title">
+            <h1>Word Count</h1>
+        </div>
+        <div class="link">
+            <a href="{%url 'home'%}">Home으로 돌아가기</a>
+            <br />
+        </div>
+        <div class="Content">
+            
+                <div class="textbox">
+                    <br>
+                    <br>
+                    <br>
+                    <p>멋쟁이 사자처럼 6기 위보람이 만든 작품입니다.</p>
+                    <br>
+                    <p>이곳은 글자를 세 주는 워드카운트 웹페이지입니다. <br><br>여기에서 글자를 세세요.</p>
+                    <br>
+                    <p>모든 단어들을 다 세어버리게따~</p>
+                </div>
+            
+        </div>
+    </div>
+    <div class="me">
+        <p>copyright: Boram We, Likelion at SYU</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+/* * {
+    text-align: center;
+    background-color: #AEC6CC
+}
+h1 {
+    color: #0065A9;
+}
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background: linear-gradient(-135deg, rgb(212, 232, 240), rgb(0, 37, 114)) fixed;
+    position: relative;
+}
+
+/*  */
+
+.Box {
+    width: 600px;
+    height: 600px;
+    background-color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -300px;
+    border: 15px inset rgb(252, 176, 64);
+    border-radius: 80px;
+    text-align: center;
+}
+
+/*  */
+
+.SYU-mark img {
+    width: 150px;
+    height: 150px;
+    margin-top: 14px;
+}
+
+/*  */
+
+.Title {
+    color: rgb(0, 37, 114);
+    margin-bottom: 10px;
+}
+
+/*  */
+.link {
+    margin-bottom: 10px;
+    text-decoration-line: none;
+}
+.Content h4 {
+    margin-bottom: 8px;
+}
+
+.Content .textbox input {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 5px;
+    outline-color: rgb(252, 176, 64);
+}
+
+
+.Content .btn {
+    width: 200px;
+    height: 40px;
+    color: black;
+    background-color: rgb(252, 176, 64);
+    border: 0;
+    outline: 0;
+    border-radius: 40px;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+
+/* 마우스 올리면 버튼 색상 변화 */
+.btn:hover {
+    background-color: rgb(168, 117, 42);
+    color: white;
+}
+
+/* 버튼 클릭하면 물결 */
+.btn::after {
+    content: "";
+    background-color:#e4cbcb ;
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding-top: 200%;
+    padding-left: 300%;
+    margin-left: 0;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 1.2s;
+}
+
+.btn:active::after {
+    padding: 0px;
+    margin: 0px;
+    opacity: 1;
+    transition: 0s
+}
+.me {
+    padding: 10px;
+}

@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+
+<head>
+    <title>BORAM</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="Box">
+        <div class="SYU-mark">
+            <img src="/static/css/likelion_syu.png">
+        </div>
+        <div class="Title">
+            <h1>Word Count</h1>
+        </div>
+        <div class="link">
+            <a href="{%url 'home'%}">다시하기</a>
+            <br />
+        </div>
+        <div class="Content">
+    
+            <div class="textbox">
+                <h3> ----- 입력한 텍스트 ----- </h3>
+                {{ fulltext }}
+                
+                <h3> ------ 단어 카운트 ------ </h3>
+                <!--'단어' - '단어가 나온 횟수' -->
+                {% for word, countTotal in dictionary %}
+                
+                {{ word }} : {{ countTotal }}
+                <br>
+                {% endfor %}
+            </div>
+            
+        </div>
+    </div>
+    <div class="me">
+        <p>copyright: Boram We, Likelion at SYU</p>
+    </div>
+</body>
+
+</html>
